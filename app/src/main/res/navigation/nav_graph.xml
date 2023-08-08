@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cocktailList">
 
+    <fragment
+        android:id="@+id/cocktailList"
+        android:name="ru.mirea.cocktailbar.ui.cocktailList.CocktailList"
+        android:label="fragment_cocktail_list"
+        tools:layout="@layout/fragment_cocktail_list" >
+        <action
+            android:id="@+id/action_cocktailList_to_addCocktailFragment"
+            app:destination="@id/addCocktailFragment" />
+        <action
+            android:id="@+id/action_cocktailList_to_detailCocktailFragment"
+            app:destination="@id/detailCocktailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailCocktailFragment"
+        android:name="ru.mirea.cocktailbar.ui.detailCocktail.DetailCocktailFragment"
+        android:label="fragment_detail_cocktail"
+        tools:layout="@layout/fragment_detail_cocktail" />
+    <fragment
+        android:id="@+id/addCocktailFragment"
+        android:name="ru.mirea.cocktailbar.ui.addCocktail.AddCocktailFragment"
+        android:label="fragment_add_cocktail"
+        tools:layout="@layout/fragment_add_cocktail" />
 </navigation>
