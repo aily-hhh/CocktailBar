@@ -6,18 +6,6 @@
     android:layout_margin="4dp"
     app:cardCornerRadius="54dp">
 
-    <TextView
-        android:id="@+id/headerCocktailCard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:layout_gravity="center_horizontal|bottom"
-        app:layout_constraintBottom_toBottomOf="@+id/cardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/imgCocktailCard"
         android:layout_width="match_parent"
@@ -29,5 +17,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/gradient" />
+
+    <TextView
+        android:id="@+id/headerCocktailCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal|bottom"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.cardview.widget.CardView>
