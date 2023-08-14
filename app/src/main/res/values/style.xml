@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.MaterialComponents.FloatingActionButton" parent="Widget.Design.FloatingActionButton">
+        <item name="borderRound">28dp</item>
+    </style>
+
+    <style name="CornerCut" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">25%</item>
+        <item name="cornerSizeTopRight">25%</item>
+        <item name="cornerSizeBottomLeft">25%</item>
+        <item name="cornerSizeBottomRight">25%</item>
+    </style>
+
+    <style name="TextElem" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxCornerRadiusBottomEnd">34dp</item>
+        <item name="boxCornerRadiusBottomStart">34dp</item>
+        <item name="boxCornerRadiusTopEnd">34dp</item>
+        <item name="boxCornerRadiusTopStart">34dp</item>
+    </style>
+
+</resources>

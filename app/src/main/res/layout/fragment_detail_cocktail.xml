@@ -40,6 +40,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/header_text_color"
             android:textSize="32sp"
+            android:text="limon fresh"
             android:layout_marginTop="28dp"
             android:paddingHorizontal="16dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +49,7 @@
 
         <TextView
             android:id="@+id/descriptionCocktailDetail"
+            android:text="drink with ice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/header_text_color"
@@ -63,10 +65,9 @@
             android:id="@+id/ingredientsCocktailDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/header_text_color"
             android:gravity="center"
-            android:textSize="16sp"
             android:padding="32dp"
+            android:text="*список ингридиентов*"
             app:layout_constraintBottom_toTopOf="@id/txtHeaderRecipeDetails"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +75,6 @@
 
         <TextView
             android:id="@+id/txtHeaderRecipeDetails"
-            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/recipe"
@@ -87,6 +87,7 @@
 
         <TextView
             android:id="@+id/txtRecipeDetails"
+            android:text="* какой-то рецепт *"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
@@ -118,8 +119,9 @@
             android:layout_margin="16dp"
             android:backgroundTint="@color/button_color"
             android:src="@drawable/ic_delete"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/imgHeaderCocktailDetail"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

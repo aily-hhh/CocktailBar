@@ -2,7 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.CocktailBar" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="fontFamily">sans-serif-condensed-light</item>
+        <item name="floatingActionButtonStyle">@style/Widget.MaterialComponents.FloatingActionButton</item>
     </style>
 
     <style name="Theme.CocktailBar" parent="Base.Theme.CocktailBar" />
+
 </resources>

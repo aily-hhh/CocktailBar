@@ -54,4 +54,4 @@ class CocktailsListAdapter: RecyclerView.Adapter<CocktailsListAdapter.CocktailVi
     fun setOnItemClickListener(listener: (Cocktail) -> Unit) {
         onItemClickListener = listener
     }
-} 
+}
