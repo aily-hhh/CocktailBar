@@ -1,5 +1,6 @@
 package ru.mirea.cocktailbar.data.dao
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -12,7 +13,7 @@ import ru.mirea.cocktailbar.data.model.Cocktail
 interface CocktailDao {
 
     @Query("SELECT * FROM cocktail")
-    suspend fun getAllCocktails(): List<Cocktail>
+    fun getAllCocktails(): LiveData<List<Cocktail>>
 
     @Insert
     suspend fun insertCocktail(cocktail: Cocktail)
@@ -23,6 +24,6 @@ interface CocktailDao {
     @Delete
     suspend fun deleteCocktail(cocktail: Cocktail)
 
-    @Query("SELECT * FROM cocktail WHERE name = :cocktailId")
-    suspend fun getCocktail(cocktailId: String): Cocktail
+    @Query("SELECT * FROM cocktail WHERE id = :cocktailId")
+    fun getCocktail(cocktailId: Long): LiveData<Cocktail>
 }

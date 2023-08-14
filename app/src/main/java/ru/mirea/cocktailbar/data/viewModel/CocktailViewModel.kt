@@ -27,13 +27,8 @@ class CocktailViewModel @Inject constructor(private val cocktailRepository: Cock
             cocktailRepository.deleteCocktail(cocktail)
         }
 
-    fun allCocktails() =
-        viewModelScope.launch {
-            cocktailRepository.getAllCocktails()
-        }
+    fun allCocktails() = cocktailRepository.getAllCocktails
 
-    fun cocktail(id: String) =
-        viewModelScope.launch {
-            cocktailRepository.getCocktail(id)
-        }
+    fun cocktail(id: Long) = cocktailRepository.getCocktail(id)
+
 }

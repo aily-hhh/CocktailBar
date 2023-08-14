@@ -1,5 +1,6 @@
 package ru.mirea.cocktailbar.data.repository
 
+import androidx.lifecycle.LiveData
 import ru.mirea.cocktailbar.data.dao.CocktailDao
 import ru.mirea.cocktailbar.data.model.Cocktail
 import javax.inject.Inject
@@ -18,11 +19,7 @@ class CocktailRepository @Inject constructor(private val cocktailDao: CocktailDa
         cocktailDao.deleteCocktail(cocktail)
     }
 
-    suspend fun getAllCocktails() {
-        cocktailDao.getAllCocktails()
-    }
+    val getAllCocktails: LiveData<List<Cocktail>> = cocktailDao.getAllCocktails()
+    fun getCocktail(cocktailId: Long): LiveData<Cocktail> = cocktailDao.getCocktail(cocktailId)
 
-    suspend fun getCocktail(id: String) {
-        cocktailDao.getCocktail(id)
-    }
 }

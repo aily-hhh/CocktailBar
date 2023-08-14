@@ -21,7 +21,11 @@
         android:id="@+id/detailCocktailFragment"
         android:name="ru.mirea.cocktailbar.ui.detailCocktail.DetailCocktailFragment"
         android:label="fragment_detail_cocktail"
-        tools:layout="@layout/fragment_detail_cocktail" />
+        tools:layout="@layout/fragment_detail_cocktail" >
+        <action
+            android:id="@+id/action_detailCocktailFragment_to_addCocktailFragment"
+            app:destination="@id/addCocktailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/addCocktailFragment"
         android:name="ru.mirea.cocktailbar.ui.addCocktail.AddCocktailFragment"

@@ -11,7 +11,7 @@ import ru.mirea.cocktailbar.data.model.Ingredient
 @Dao
 interface IngredientDao {
     @Query("SELECT * FROM ingredient WHERE cocktail_id = :cocktailId")
-    suspend fun getIngredient(cocktailId: String): Ingredient
+    fun getIngredient(cocktailId: Long): LiveData<List<Ingredient>>
 
     @Insert
     suspend fun insertIngredient(ingredient: Ingredient)
