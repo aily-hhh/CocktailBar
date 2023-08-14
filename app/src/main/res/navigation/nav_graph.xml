@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/cocktailList"
-        android:name="ru.mirea.cocktailbar.ui.cocktailList.CocktailList"
+        android:name="ru.mirea.cocktailbar.ui.cocktailList.CocktailListFragment"
         android:label="fragment_cocktail_list"
         tools:layout="@layout/fragment_cocktail_list" >
         <action

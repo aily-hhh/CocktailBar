@@ -18,7 +18,7 @@ class CocktailsListAdapter: RecyclerView.Adapter<CocktailsListAdapter.CocktailVi
 
     private val callback = object: DiffUtil.ItemCallback<Cocktail>() {
         override fun areItemsTheSame(oldItem: Cocktail, newItem: Cocktail): Boolean {
-            return oldItem.name == newItem.name
+            return oldItem.id == newItem.id
         }
 
         override fun areContentsTheSame(oldItem: Cocktail, newItem: Cocktail): Boolean {
