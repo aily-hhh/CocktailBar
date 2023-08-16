@@ -25,10 +25,17 @@
         <action
             android:id="@+id/action_detailCocktailFragment_to_addCocktailFragment"
             app:destination="@id/addCocktailFragment" />
+        <argument
+            android:name="current_cocktail"
+            app:argType="ru.mirea.cocktailbar.data.model.Cocktail" />
     </fragment>
     <fragment
         android:id="@+id/addCocktailFragment"
         android:name="ru.mirea.cocktailbar.ui.addCocktail.AddCocktailFragment"
         android:label="fragment_add_cocktail"
-        tools:layout="@layout/fragment_add_cocktail" />
+        tools:layout="@layout/fragment_add_cocktail" >
+        <argument
+            android:name="current_cocktail"
+            app:argType="ru.mirea.cocktailbar.data.model.Cocktail" />
+    </fragment>
 </navigation>

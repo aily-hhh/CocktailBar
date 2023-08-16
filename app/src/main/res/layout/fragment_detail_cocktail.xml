@@ -7,7 +7,6 @@
     tools:context=".ui.detailCocktail.DetailCocktailFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_gravity=""
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -66,6 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textAlignment="gravity"
             android:padding="32dp"
             android:text="*список ингридиентов*"
             app:layout_constraintBottom_toTopOf="@id/txtHeaderRecipeDetails"
